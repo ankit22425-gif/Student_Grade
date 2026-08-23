@@ -15,11 +15,11 @@ public class StudentGrade{
         python=sc.nextByte();
         System.out.println("Enter  java :");
         java=sc.nextByte();
-        System.out.println("Enter c :");
+        System.out.println("Enter C :");
         c=sc.nextByte();
         total=(short)(python+java+c);
         System.out.println("total num :"+total);
-        percentage=total/3;
+        percentage=(total*100)/300;
         if(percentage>90)
         {
             System.out.println("Grade A");
@@ -28,6 +28,14 @@ public class StudentGrade{
         else if(percentage>75)
         {
             System.out.println("Greade B");
+        }
+       else if(percentage>65)
+        {
+            System.out.println("Greade C");
+        }
+        else if(percentage>50)
+        {
+            System.out.println("Greade D");
         }
         else
         {
